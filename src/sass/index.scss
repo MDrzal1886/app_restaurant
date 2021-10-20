@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Lobster&display=swap");
+
+body {
+  font-family: "Baloo 2";
+}
+
+.titleFontFamyli {
+  font-family: "Lobster";
+}
+
+.btn {
+  text-transform: uppercase;
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
