@@ -1,0 +1,15 @@
+.banerSticky {
+  text-align: center;
+  color: white;
+  height: 200px;
+  background-size: cover;
+  background-image: url(../img/stickyImage.jpg);
+  p {
+    font-size: 0.5rem;
+  }
+  .banerStickyBackground {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}

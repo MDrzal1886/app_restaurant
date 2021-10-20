@@ -1,0 +1,13 @@
+main {
+  .list-group-item {
+    .mainMealImg {
+      width: 100px;
+    }
+    .mainMealDescription {
+      min-width: 70%;
+      p {
+        font-size: 0.6rem;
+      }
+    }
+  }
+}
