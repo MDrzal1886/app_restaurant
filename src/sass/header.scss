@@ -1,0 +1,12 @@
+.header {
+  background-color: #616060;
+  .navbar-toggler {
+    background-color: #373535;
+  }
+  .nav-link:hover {
+    border-bottom: 2px solid rgb(221, 213, 213);
+  }
+  .active {
+    border-bottom: 2px solid rgb(221, 213, 213);
+  }
+}
