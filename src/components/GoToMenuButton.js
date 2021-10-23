@@ -1,5 +1,7 @@
 import { useHistory } from "react-router";
 
+import "../sass/goToMenuButton.scss";
+
 const GoToMenuButton = () => {
   const history = useHistory();
   const handleOnClick = () => {
@@ -8,7 +10,7 @@ const GoToMenuButton = () => {
   };
   return (
     <button
-      className="btn btn-light btn-sm rounded-0  fs-6 px-3 py-2"
+      className="btn btn-light btn-sm rounded-0 px-4 py-2 goToMenuBtn"
       onClick={handleOnClick}
     >
       Nasze Menu

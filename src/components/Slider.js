@@ -41,8 +41,8 @@ const Slider = () => {
             className="d-block w-100 sliderImg"
             alt="Burger"
           />
-          <div className="carousel-caption d-md-block">
-            <h5 className="titleFontFamyli fs-1">Burgery</h5>
+          <div className="carousel-caption">
+            <h5 className="titleFontFamyli">Burgery</h5>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid
               at ullam ipsum id sed, explicabo, recusandae rerum harum minus
@@ -54,8 +54,8 @@ const Slider = () => {
         </div>
         <div className="carousel-item">
           <img src={pizzaImg} className="d-block w-100 sliderImg" alt="Pizza" />
-          <div className="carousel-caption d-md-block">
-            <h5 className="titleFontFamyli fs-1">Pizza</h5>
+          <div className="carousel-caption">
+            <h5 className="titleFontFamyli">Pizza</h5>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta,
               quis. Rem dolor id architecto sapiente maxime nobis perferendis
@@ -71,8 +71,8 @@ const Slider = () => {
             className="d-block w-100 sliderImg"
             alt="Makaron"
           />
-          <div className="carousel-caption d-md-block">
-            <h5 className="titleFontFamyli fs-1">Makarony</h5>
+          <div className="carousel-caption">
+            <h5 className="titleFontFamyli">Makarony</h5>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Repudiandae mollitia dolorum, deserunt, officiis culpa nobis error

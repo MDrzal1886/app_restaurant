@@ -1,12 +1,34 @@
-main {
-  .list-group-item {
-    .mainMealImg {
-      width: 100px;
+.mainMealsContainer {
+  .list-group {
+    @media (min-width: 576px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
-    .mainMealDescription {
-      min-width: 70%;
-      p {
-        font-size: 0.6rem;
+    .list-group-item {
+      width: 300px;
+      justify-content: center;
+      @media (min-width: 576px) {
+        width: 45%;
+      }
+      .mainMealImg {
+        width: 70px;
+        @media (min-width: 576px) {
+          width: 100px;
+        }
+        @media (min-width: 768px) {
+          width: 150px;
+        }
+      }
+      .mainMealDescription {
+        flex-grow: 1;
+        @media (min-width: 576px) {
+          flex-grow: 0;
+          width: 60%;
+        }
+        p {
+          font-size: 0.6rem;
+        }
       }
     }
   }

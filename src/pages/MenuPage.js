@@ -39,7 +39,7 @@ const MenuPage = () => {
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseTwo"
             >
-              Desery
+              Makarony
             </button>
           </h2>
           <div
@@ -48,7 +48,7 @@ const MenuPage = () => {
             aria-labelledby="panelsStayOpen-headingTwo"
           >
             <div className="accordion-body">
-              <MealsType type={desserts} />
+              <MealsType type={pastas} />
             </div>
           </div>
         </div>
@@ -62,7 +62,7 @@ const MenuPage = () => {
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseThree"
             >
-              Makarony
+              Pizza
             </button>
           </h2>
           <div
@@ -71,7 +71,7 @@ const MenuPage = () => {
             aria-labelledby="panelsStayOpen-headingThree"
           >
             <div className="accordion-body">
-              <MealsType type={pastas} />
+              <MealsType type={pizza} />
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@ const MenuPage = () => {
               aria-expanded="false"
               aria-controls="panelsStayOpen-collapseFour"
             >
-              Pizza
+              Desery
             </button>
           </h2>
           <div
@@ -94,7 +94,7 @@ const MenuPage = () => {
             aria-labelledby="panelsStayOpen-headingFour"
           >
             <div className="accordion-body">
-              <MealsType type={pizza} />
+              <MealsType type={desserts} />
             </div>
           </div>
         </div>

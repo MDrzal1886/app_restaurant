@@ -3,7 +3,7 @@ import "../sass/footer.scss";
 const Footer = () => {
   return (
     <footer className="footer text-light">
-      <address className="m-0 d-flex flex-column align-items-center">
+      <address className="m-0 d-flex flex-column align-items-center flex-sm-row justify-content-around">
         <div className="adressContainer d-flex flex-column my-2 text-center">
           <h5 className="titleFontFamyli m-0 fs-1">Adres</h5>
           <p className="m-0">ul. Kwiatowa 17</p>

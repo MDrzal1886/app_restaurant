@@ -11,16 +11,16 @@ const Header = () => {
   const handleShow = () => setShow((prev) => !prev);
 
   return (
-    <header className="header">
+    <header className="header w-100">
       <nav className="navbar navbar-expand-lg navbar-dark p-0">
-        <div className="container-fluid justify-content-end p-2">
+        <div className="container-fluid p-2 justify-content-center justify-content-sm-between">
           <Link
             onClick={() => setShow(false)}
             className="navbar-brand m-0"
             to="/"
           >
             <img
-              className=" d-block w-50 mx-auto"
+              className="logo d-block mx-auto"
               src={logo}
               alt="restaurant logo"
             />
@@ -44,7 +44,7 @@ const Header = () => {
             id="navbarNav"
           >
             <ul className="navbar-nav text-center align-items-center">
-              <li className="nav-item w-75">
+              <li className="nav-item">
                 <NavLink
                   onClick={handleShow}
                   className="nav-link fs-5"
@@ -54,7 +54,7 @@ const Header = () => {
                   Start
                 </NavLink>
               </li>
-              <li className="nav-item w-75">
+              <li className="nav-item">
                 <NavLink
                   onClick={handleShow}
                   className="nav-link fs-5"
@@ -63,7 +63,7 @@ const Header = () => {
                   Menu
                 </NavLink>
               </li>
-              <li className="nav-item w-75">
+              <li className="nav-item">
                 <NavLink
                   onClick={handleShow}
                   className="nav-link fs-5"
@@ -72,7 +72,7 @@ const Header = () => {
                   O nas
                 </NavLink>
               </li>
-              <li className="nav-item w-75">
+              <li className="nav-item">
                 <NavLink
                   onClick={handleShow}
                   className="nav-link fs-5"
@@ -81,7 +81,7 @@ const Header = () => {
                   Galeria
                 </NavLink>
               </li>
-              <li className="nav-item w-75">
+              <li className="nav-item">
                 <NavLink
                   onClick={handleShow}
                   className="nav-link fs-5"

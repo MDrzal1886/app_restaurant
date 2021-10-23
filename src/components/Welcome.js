@@ -9,7 +9,10 @@ const Welcome = () => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi porro
           ipsam molestiae beatae cum commodi unde laborum. Nihil deserunt
           architecto eligendi dolore ab dolores animi delectus, possimus
-          asperiores rem sequi.
+          asperiores rem sequi. Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Quidem quam illum ipsum cumque tenetur voluptatum,
+          ipsam facilis minus itaque autem laborum nesciunt nemo nostrum fuga
+          eveniet temporibus ex recusandae pariatur?
         </p>
       </div>
       <MainMeals />

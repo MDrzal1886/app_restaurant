@@ -4,8 +4,57 @@
   height: 200px;
   background-size: cover;
   background-image: url(../img/stickyImage.jpg);
+  @media (min-width: 576px) {
+    height: 250px;
+  }
+  @media (min-width: 768px) {
+    height: 300px;
+  }
+  @media (min-width: 992px) {
+    background-attachment: fixed;
+    height: 350px;
+  }
+  @media (min-width: 1200px) {
+    height: 400px;
+  }
+  @media (min-width: 1400px) {
+    height: 450px;
+  }
+  h5 {
+    font-size: 2rem;
+    @media (min-width: 576px) {
+      font-size: 3rem;
+    }
+    @media (min-width: 768px) {
+      font-size: 4rem;
+    }
+    @media (min-width: 992px) {
+      font-size: 5rem;
+    }
+    @media (min-width: 1200px) {
+      font-size: 6rem;
+    }
+    @media (min-width: 1400px) {
+      font-size: 7rem;
+    }
+  }
   p {
     font-size: 0.5rem;
+    @media (min-width: 576px) {
+      font-size: 0.7rem;
+    }
+    @media (min-width: 768px) {
+      font-size: 0.9rem;
+    }
+    @media (min-width: 992px) {
+      font-size: 1.1rem;
+    }
+    @media (min-width: 1200px) {
+      font-size: 1.3rem;
+    }
+    @media (min-width: 1400px) {
+      font-size: 1.5rem;
+    }
   }
   .banerStickyBackground {
     width: 100%;
