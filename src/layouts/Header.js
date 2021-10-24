@@ -9,7 +9,10 @@ const Header = () => {
   const [show, setShow] = useState(false);
 
   const handleShow = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
     setShow((prev) => !prev);
   };
 
@@ -19,7 +22,10 @@ const Header = () => {
         <div className="container-fluid p-2 justify-content-center justify-content-sm-between">
           <Link
             onClick={() => {
-              window.scrollTo(0, 0);
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
               setShow(false);
             }}
             className="navbar-brand m-0"
