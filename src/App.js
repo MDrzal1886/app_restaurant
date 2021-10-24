@@ -12,7 +12,7 @@ import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="container-fluid p-0 position-relative appContainer">
         <Header />
         <main className="min-vh-50">
