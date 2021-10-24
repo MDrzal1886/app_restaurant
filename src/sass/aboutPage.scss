@@ -1,0 +1,10 @@
+.aboutPageContainer {
+  .imageAndTextContainer {
+    .imgContainer {
+      @media (min-width: 992px) {
+        max-width: 500px;
+        max-height: 400px;
+      }
+    }
+  }
+}

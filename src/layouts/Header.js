@@ -8,14 +8,20 @@ import "../sass/header.scss";
 const Header = () => {
   const [show, setShow] = useState(false);
 
-  const handleShow = () => setShow((prev) => !prev);
+  const handleShow = () => {
+    window.scrollTo(0, 0);
+    setShow((prev) => !prev);
+  };
 
   return (
     <header className="header w-100">
       <nav className="navbar navbar-expand-lg navbar-dark p-0">
         <div className="container-fluid p-2 justify-content-center justify-content-sm-between">
           <Link
-            onClick={() => setShow(false)}
+            onClick={() => {
+              window.scrollTo(0, 0);
+              setShow(false);
+            }}
             className="navbar-brand m-0"
             to="/"
           >

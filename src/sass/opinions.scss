@@ -3,6 +3,22 @@
   background-image: url(../img/stickyImage.jpg);
   height: 250px;
   color: white;
+  @media (min-width: 576px) {
+    height: 300px;
+  }
+  @media (min-width: 768px) {
+    height: 350px;
+  }
+  @media (min-width: 992px) {
+    height: 400px;
+    background-attachment: fixed;
+  }
+  @media (min-width: 1200px) {
+    height: 450px;
+  }
+  @media (min-width: 1400px) {
+    height: 500px;
+  }
   .carousel-item {
     width: 100%;
     height: 100%;
@@ -11,8 +27,56 @@
   .opinionImg {
     border-radius: 15px;
     width: 50px;
+    @media (min-width: 576px) {
+      width: 75px;
+    }
+    @media (min-width: 768px) {
+      width: 100px;
+    }
+    @media (min-width: 992px) {
+      width: 125px;
+    }
+    @media (min-width: 1200px) {
+      width: 150px;
+    }
+    @media (min-width: 1400px) {
+      width: 175px;
+    }
+  }
+  h5 {
+    font-size: 1.5rem;
+    @media (min-width: 576px) {
+      font-size: 2rem;
+    }
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+    @media (min-width: 992px) {
+      font-size: 3rem;
+    }
+    @media (min-width: 1200px) {
+      font-size: 3.5rem;
+    }
+    @media (min-width: 1400px) {
+      font-size: 4rem;
+    }
   }
   .opinionDescription {
     font-size: 0.5rem;
+    @media (min-width: 576px) {
+      font-size: 0.7rem;
+    }
+    @media (min-width: 768px) {
+      font-size: 0.9rem;
+    }
+    @media (min-width: 992px) {
+      font-size: 1.1rem;
+    }
+    @media (min-width: 1200px) {
+      font-size: 1.3rem;
+    }
+    @media (min-width: 1400px) {
+      font-size: 1.5rem;
+    }
   }
 }
