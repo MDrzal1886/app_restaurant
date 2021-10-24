@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch, HashRouter } from "react-router-dom";
 
 import Header from "./layouts/Header";
 import HomePage from "./pages/HomePage";
@@ -12,7 +12,7 @@ import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <div className="container-fluid p-0 position-relative appContainer">
         <Header />
         <main className="min-vh-50">
@@ -28,7 +28,7 @@ function App() {
         <Footer />
         <ScrollToTopButton />
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 

@@ -2,9 +2,8 @@ const Opinion = (opinion) => {
   return (
     <div
       className={`carousel-item ${
-        opinion.classActive ? opinion.classActive : null
+        opinion.classActive ? opinion.classActive : ""
       }`}
-      data-bs-interval="10000"
     >
       <img
         src={opinion.img}

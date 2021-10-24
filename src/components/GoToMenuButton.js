@@ -5,7 +5,10 @@ import "../sass/goToMenuButton.scss";
 const GoToMenuButton = ({ type }) => {
   const history = useHistory();
   const handleOnClick = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
     history.push(type ? `/menu/${type}` : "/menu");
   };
   return (
