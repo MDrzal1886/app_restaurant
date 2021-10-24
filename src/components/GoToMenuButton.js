@@ -10,7 +10,7 @@ const GoToMenuButton = ({ type }) => {
   };
   return (
     <button
-      className="btn btn-light btn-sm rounded-0 px-4 py-2 goToMenuBtn"
+      className="btn btn-light btn-sm rounded-0 px-4 py-2 goToMenuBtn border-0"
       onClick={handleOnClick}
     >
       Nasze Menu

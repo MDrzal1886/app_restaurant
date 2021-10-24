@@ -1,4 +1,4 @@
-import { Link, Route, useRouteMatch, Switch } from "react-router-dom";
+import { NavLink, Route, useRouteMatch, Switch } from "react-router-dom";
 import MainMeals from "../components/MainMeals";
 import MealsType from "../components/MealsType";
 
@@ -9,40 +9,31 @@ const MenuPage = () => {
 
   return (
     <div className="menuPageContainer">
-      <h1 className="text-center p-3 titleFontFamyli">Nasze menu</h1>
-      <ul className="nav d-flex flex-column flex-sm-row justify-content-around">
+      <h1 className="text-center p-3 titleFontFamyli mt-2">Nasze menu</h1>
+      <ul className="nav d-flex flex-column flex-sm-row justify-content-around align-items-center mb-1">
         <li className="nav-item">
-          <Link
-            className="nav-link text-center text-reset fs-4"
+          <NavLink
+            className="nav-link text-center fs-4"
             aria-current="page"
             to={`${url}/burgers`}
           >
             Burgery
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link
-            className="nav-link text-center text-reset fs-4"
-            to={`${url}/pastas`}
-          >
+          <NavLink className="nav-link text-center fs-4" to={`${url}/pastas`}>
             Makarony
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link
-            className="nav-link text-center text-reset fs-4"
-            to={`${url}/pizza`}
-          >
+          <NavLink className="nav-link text-center fs-4" to={`${url}/pizza`}>
             Pizza
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link
-            className="nav-link text-center text-reset fs-4"
-            to={`${url}/desserts`}
-          >
+          <NavLink className="nav-link text-center fs-4" to={`${url}/desserts`}>
             Desery
-          </Link>
+          </NavLink>
         </li>
       </ul>
       <Switch>

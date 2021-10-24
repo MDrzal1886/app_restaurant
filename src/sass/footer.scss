@@ -7,6 +7,11 @@
         color: #bdbdbd;
         a {
           color: #bdbdbd;
+          @media (min-width: 992px) {
+            &:hover {
+              color: white;
+            }
+          }
         }
       }
     }
