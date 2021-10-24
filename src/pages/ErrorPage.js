@@ -5,9 +5,17 @@ import errorImg from "../img/error.svg";
 const ErrorPage = () => {
   const location = useLocation();
 
+  const handleOnClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   const backToMenu =
     location.pathname === "/error" ? (
       <Link
+        onClick={handleOnClick}
         to="/menu"
         className="text-center d-block text-decoration-underline text-reset m-3"
       >
@@ -24,6 +32,7 @@ const ErrorPage = () => {
         </h1>
         {backToMenu}
         <Link
+          onClick={handleOnClick}
           to="/"
           className="text-center d-block text-decoration-underline text-reset m-3"
         >
