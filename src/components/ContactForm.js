@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Prompt } from "react-router";
 
-import "../sass/contactForm.scss";
-
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
@@ -66,7 +64,7 @@ const ContactForm = () => {
       setPhoneNumberValid(false);
       setValidate(false);
       setSendMessage(true);
-      setTimeout(() => setSendMessage(false), 2000);
+      setTimeout(() => setSendMessage(false), 3000);
     }
   };
 
@@ -75,13 +73,13 @@ const ContactForm = () => {
       className="row g-3 needs-validation m-1 mb-3 contactFormContainer"
       noValidate
     >
-      <div className="col-md-4">
+      <div className="col-md-4 inputContainer mx-auto">
         <div className="input-group has-validation">
           <input
             onChange={(event) => setName(event.target.value)}
             type="text"
             placeholder="Twoje imię*"
-            className={`form-control rounded-0 ${
+            className={`form-control shadow-none rounded-0 ${
               validate ? nameValidation() : null
             }`}
             value={name}
@@ -89,13 +87,13 @@ const ContactForm = () => {
           <div className="invalid-feedback">Imię jest wymagane</div>
         </div>
       </div>
-      <div className="col-md-4">
+      <div className="col-md-4 inputContainer mx-auto">
         <div className="input-group has-validation">
           <input
             onChange={(event) => setMail(event.target.value)}
             type="email"
             placeholder="Twój mail*"
-            className={`form-control rounded-0 ${
+            className={`form-control shadow-none rounded-0 ${
               validate ? mailValidation() : null
             }`}
             value={mail}
@@ -103,13 +101,13 @@ const ContactForm = () => {
           <div className="invalid-feedback">Mail jest wymagany</div>
         </div>
       </div>
-      <div className="col-md-4">
+      <div className="col-md-4 inputContainer mx-auto">
         <div className="input-group has-validation">
           <input
             onChange={handlePhoneNumberChange}
             type="text"
             placeholder="Twój telefon*"
-            className={`form-control rounded-0 ${
+            className={`form-control shadow-none rounded-0 ${
               validate ? phoneNumberValidation() : null
             }`}
             aria-describedby="inputGroupPrepend"
@@ -118,12 +116,12 @@ const ContactForm = () => {
           <div className="invalid-feedback">Numer telefonu jest wymagany</div>
         </div>
       </div>
-      <div className="col-md-3">
+      <div className="col-md-3 inputContainer mx-auto">
         <textarea
           onChange={(event) => setMessage(event.target.value)}
           type="text"
           placeholder="Twoja wiadomość"
-          className="form-control rounded-0 messageArea"
+          className="form-control shadow-none rounded-0 messageArea"
           value={message}
         />
       </div>

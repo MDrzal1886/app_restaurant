@@ -1,0 +1,41 @@
+.contactPageContainer {
+  .phoneAndMailContainers {
+    @media (min-width: 576px) {
+      width: 50%;
+    }
+    .contactIcon {
+      font-size: 2rem;
+    }
+  }
+  .contactFormContainer {
+    .inputContainer {
+      width: 100%;
+      @media (min-width: 576px) {
+        width: 90%;
+      }
+      input,
+      .messageArea {
+        font-size: 1rem;
+        @media (min-width: 576px) {
+          font-size: 1.1rem;
+        }
+        @media (min-width: 768px) {
+          font-size: 1.2rem;
+        }
+        @media (min-width: 992px) {
+          font-size: 1.3rem;
+        }
+        @media (min-width: 1200px) {
+          font-size: 1.4rem;
+        }
+        @media (min-width: 1400px) {
+          font-size: 1.5rem;
+        }
+      }
+      .messageArea {
+        height: 200px;
+        resize: none;
+      }
+    }
+  }
+}
