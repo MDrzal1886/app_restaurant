@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/app_restaurant/static/css/main.7b6b1f31.chunk.css",
-    "main.js": "/app_restaurant/static/js/main.54afef7c.chunk.js",
-    "main.js.map": "/app_restaurant/static/js/main.54afef7c.chunk.js.map",
+    "main.js": "/app_restaurant/static/js/main.2daf4285.chunk.js",
+    "main.js.map": "/app_restaurant/static/js/main.2daf4285.chunk.js.map",
     "runtime-main.js": "/app_restaurant/static/js/runtime-main.cdb0cff2.js",
     "runtime-main.js.map": "/app_restaurant/static/js/runtime-main.cdb0cff2.js.map",
     "static/css/2.b1096ed8.chunk.css": "/app_restaurant/static/css/2.b1096ed8.chunk.css",
@@ -62,6 +62,6 @@
     "static/css/2.b1096ed8.chunk.css",
     "static/js/2.0d64e027.chunk.js",
     "static/css/main.7b6b1f31.chunk.css",
-    "static/js/main.54afef7c.chunk.js"
+    "static/js/main.2daf4285.chunk.js"
   ]
 }
