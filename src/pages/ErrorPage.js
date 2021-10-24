@@ -16,19 +16,21 @@ const ErrorPage = () => {
     ) : null;
 
   return (
-    <>
-      <img src={errorImg} alt="error" className="w-75 m-3 mx-auto d-block" />
-      <h1 className="text-center pt-3 titleFontFamyli">
-        Nie zanlazłem takiej strony
-      </h1>
-      {backToMenu}
-      <Link
-        to="/"
-        className="text-center d-block text-decoration-underline text-reset m-3"
-      >
-        Wróć do strony głównej
-      </Link>
-    </>
+    <div className="ErrorContainer d-flex flex-column flex-sm-row align-items-center justify-content-center">
+      <img src={errorImg} alt="error" className="w-25 m-3 d-block" />
+      <div className="w-50">
+        <h1 className="text-center pt-3 titleFontFamyli">
+          Nie zanlazłem takiej strony
+        </h1>
+        {backToMenu}
+        <Link
+          to="/"
+          className="text-center d-block text-decoration-underline text-reset m-3"
+        >
+          Wróć do strony głównej
+        </Link>
+      </div>
+    </div>
   );
 };
 

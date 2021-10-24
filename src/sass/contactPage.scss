@@ -37,5 +37,23 @@
         resize: none;
       }
     }
+    .btn {
+      font-size: 1rem;
+      @media (min-width: 576px) {
+        font-size: 1.15rem;
+      }
+      @media (min-width: 768px) {
+        font-size: 1.3rem;
+      }
+      @media (min-width: 992px) {
+        font-size: 1.45rem;
+      }
+      @media (min-width: 1200px) {
+        font-size: 1.6rem;
+      }
+      @media (min-width: 1400px) {
+        font-size: 1.75rem;
+      }
+    }
   }
 }

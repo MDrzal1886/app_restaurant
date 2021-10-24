@@ -130,7 +130,7 @@ const ContactForm = () => {
       ) : null}
       <div className="col-12 text-center">
         <button
-          className="btn btn-dark rounded-0"
+          className="btn btn-dark py-2 px-4 rounded-0"
           type="submit"
           onClick={handleOnClick}
         >
