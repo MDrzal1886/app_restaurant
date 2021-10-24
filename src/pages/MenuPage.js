@@ -1,106 +1,55 @@
+import { Link, Route, useRouteMatch, Switch } from "react-router-dom";
 import MainMeals from "../components/MainMeals";
 import MealsType from "../components/MealsType";
-import { burgers, pastas, pizza, desserts } from "../data";
+
+import "../sass/menuPage.scss";
 
 const MenuPage = () => {
+  const { path, url } = useRouteMatch();
+
   return (
-    <>
+    <div className="menuPageContainer">
       <h1 className="text-center p-3 titleFontFamyli">Nasze menu</h1>
-      <div className="accordion" id="accordionPanelsStayOpenExample">
-        <div className="accordion-item">
-          <h2 className="accordion-header" id="panelsStayOpen-headingOne">
-            <button
-              className="btn w-100"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseOne"
-              aria-expanded="true"
-              aria-controls="panelsStayOpen-collapseOne"
-            >
-              Burgery
-            </button>
-          </h2>
-          <div
-            id="panelsStayOpen-collapseOne"
-            className="accordion-collapse collapse show"
-            aria-labelledby="panelsStayOpen-headingOne"
+      <ul className="nav d-flex flex-column flex-sm-row justify-content-around">
+        <li className="nav-item">
+          <Link
+            className="nav-link text-center text-reset fs-4"
+            aria-current="page"
+            to={`${url}/burgers`}
           >
-            <div className="accordion-body"></div>
-            <MealsType type={burgers} />
-          </div>
-        </div>
-        <div className="accordion-item">
-          <h2 className="accordion-header" id="panelsStayOpen-headingTwo">
-            <button
-              className="btn w-100 collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseTwo"
-              aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseTwo"
-            >
-              Makarony
-            </button>
-          </h2>
-          <div
-            id="panelsStayOpen-collapseTwo"
-            className="accordion-collapse collapse"
-            aria-labelledby="panelsStayOpen-headingTwo"
+            Burgery
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link
+            className="nav-link text-center text-reset fs-4"
+            to={`${url}/pastas`}
           >
-            <div className="accordion-body">
-              <MealsType type={pastas} />
-            </div>
-          </div>
-        </div>
-        <div className="accordion-item">
-          <h2 className="accordion-header" id="panelsStayOpen-headingThree">
-            <button
-              className="btn w-100 collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseThree"
-              aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseThree"
-            >
-              Pizza
-            </button>
-          </h2>
-          <div
-            id="panelsStayOpen-collapseThree"
-            className="accordion-collapse collapse"
-            aria-labelledby="panelsStayOpen-headingThree"
+            Makarony
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link
+            className="nav-link text-center text-reset fs-4"
+            to={`${url}/pizza`}
           >
-            <div className="accordion-body">
-              <MealsType type={pizza} />
-            </div>
-          </div>
-        </div>
-        <div className="accordion-item">
-          <h2 className="accordion-header" id="panelsStayOpen-headingFour">
-            <button
-              className="btn w-100 collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseFour"
-              aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseFour"
-            >
-              Desery
-            </button>
-          </h2>
-          <div
-            id="panelsStayOpen-collapseFour"
-            className="accordion-collapse collapse"
-            aria-labelledby="panelsStayOpen-headingFour"
+            Pizza
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link
+            className="nav-link text-center text-reset fs-4"
+            to={`${url}/desserts`}
           >
-            <div className="accordion-body">
-              <MealsType type={desserts} />
-            </div>
-          </div>
-        </div>
-      </div>
+            Desery
+          </Link>
+        </li>
+      </ul>
+      <Switch>
+        <Route path={`${path}/:mealType`} component={MealsType} />
+      </Switch>
       <MainMeals />
-    </>
+    </div>
   );
 };
 
