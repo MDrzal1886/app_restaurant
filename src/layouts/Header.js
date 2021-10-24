@@ -47,7 +47,7 @@ const Header = () => {
               <li className="nav-item">
                 <NavLink
                   onClick={handleShow}
-                  className="nav-link fs-5"
+                  className="nav-link fs-4"
                   exact
                   to="/"
                 >
@@ -57,7 +57,7 @@ const Header = () => {
               <li className="nav-item">
                 <NavLink
                   onClick={handleShow}
-                  className="nav-link fs-5"
+                  className="nav-link fs-4"
                   to="/menu"
                 >
                   Menu
@@ -66,7 +66,7 @@ const Header = () => {
               <li className="nav-item">
                 <NavLink
                   onClick={handleShow}
-                  className="nav-link fs-5"
+                  className="nav-link fs-4"
                   to="/about"
                 >
                   O nas
@@ -75,7 +75,7 @@ const Header = () => {
               <li className="nav-item">
                 <NavLink
                   onClick={handleShow}
-                  className="nav-link fs-5"
+                  className="nav-link fs-4"
                   to="/gallery"
                 >
                   Galeria
@@ -84,7 +84,7 @@ const Header = () => {
               <li className="nav-item">
                 <NavLink
                   onClick={handleShow}
-                  className="nav-link fs-5"
+                  className="nav-link fs-4"
                   to="/contact"
                 >
                   Kontakt

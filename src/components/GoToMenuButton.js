@@ -2,11 +2,11 @@ import { useHistory } from "react-router";
 
 import "../sass/goToMenuButton.scss";
 
-const GoToMenuButton = () => {
+const GoToMenuButton = ({ type }) => {
   const history = useHistory();
   const handleOnClick = () => {
     window.scrollTo(0, 0);
-    history.push("/menu");
+    history.push(type ? `/menu/${type}` : "/menu");
   };
   return (
     <button

@@ -49,7 +49,7 @@ const Slider = () => {
               iste nesciunt animi alias excepturi voluptatem enim labore
               doloribus. Nam, iure!
             </p>
-            <GoToMenuButton />
+            <GoToMenuButton type="burgers" />
           </div>
         </div>
         <div className="carousel-item">
@@ -62,7 +62,7 @@ const Slider = () => {
               totam amet excepturi dolorem voluptate, omnis aliquam numquam
               delectus quis. Sit, ratione.
             </p>
-            <GoToMenuButton />
+            <GoToMenuButton type="pizza" />
           </div>
         </div>
         <div className="carousel-item">
@@ -79,7 +79,7 @@ const Slider = () => {
               earum non, accusantium labore excepturi nulla in consectetur
               voluptatibus commodi cum. Illum, perferendis optio.
             </p>
-            <GoToMenuButton />
+            <GoToMenuButton type="pastas" />
           </div>
         </div>
       </div>
