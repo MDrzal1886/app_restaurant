@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/app_restaurant/static/css/main.7b6b1f31.chunk.css",
-    "main.js": "/app_restaurant/static/js/main.8a158bc3.chunk.js",
-    "main.js.map": "/app_restaurant/static/js/main.8a158bc3.chunk.js.map",
-    "runtime-main.js": "/app_restaurant/static/js/runtime-main.cdb0cff2.js",
-    "runtime-main.js.map": "/app_restaurant/static/js/runtime-main.cdb0cff2.js.map",
+    "main.js": "/app_restaurant/static/js/main.db9ff477.chunk.js",
+    "main.js.map": "/app_restaurant/static/js/main.db9ff477.chunk.js.map",
+    "runtime-main.js": "/app_restaurant/static/js/runtime-main.dd0fd894.js",
+    "runtime-main.js.map": "/app_restaurant/static/js/runtime-main.dd0fd894.js.map",
     "static/css/2.b1096ed8.chunk.css": "/app_restaurant/static/css/2.b1096ed8.chunk.css",
-    "static/js/2.1e52ae7e.chunk.js": "/app_restaurant/static/js/2.1e52ae7e.chunk.js",
-    "static/js/2.1e52ae7e.chunk.js.map": "/app_restaurant/static/js/2.1e52ae7e.chunk.js.map",
-    "static/js/3.506cdfe0.chunk.js": "/app_restaurant/static/js/3.506cdfe0.chunk.js",
-    "static/js/3.506cdfe0.chunk.js.map": "/app_restaurant/static/js/3.506cdfe0.chunk.js.map",
+    "static/js/2.9a00e9ad.chunk.js": "/app_restaurant/static/js/2.9a00e9ad.chunk.js",
+    "static/js/2.9a00e9ad.chunk.js.map": "/app_restaurant/static/js/2.9a00e9ad.chunk.js.map",
+    "static/js/3.45ea4b86.chunk.js": "/app_restaurant/static/js/3.45ea4b86.chunk.js",
+    "static/js/3.45ea4b86.chunk.js.map": "/app_restaurant/static/js/3.45ea4b86.chunk.js.map",
     "index.html": "/app_restaurant/index.html",
     "static/css/2.b1096ed8.chunk.css.map": "/app_restaurant/static/css/2.b1096ed8.chunk.css.map",
     "static/css/main.7b6b1f31.chunk.css.map": "/app_restaurant/static/css/main.7b6b1f31.chunk.css.map",
-    "static/js/2.1e52ae7e.chunk.js.LICENSE.txt": "/app_restaurant/static/js/2.1e52ae7e.chunk.js.LICENSE.txt",
+    "static/js/2.9a00e9ad.chunk.js.LICENSE.txt": "/app_restaurant/static/js/2.9a00e9ad.chunk.js.LICENSE.txt",
     "static/media/aboutImage.23a8123f.jpg": "/app_restaurant/static/media/aboutImage.23a8123f.jpg",
     "static/media/adamNowak.15c40aaa.jpg": "/app_restaurant/static/media/adamNowak.15c40aaa.jpg",
     "static/media/baconBurger.da566229.jpg": "/app_restaurant/static/media/baconBurger.da566229.jpg",
@@ -58,10 +58,10 @@
     "static/media/vegeBurger.8d09f5ea.jpg": "/app_restaurant/static/media/vegeBurger.8d09f5ea.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.cdb0cff2.js",
+    "static/js/runtime-main.dd0fd894.js",
     "static/css/2.b1096ed8.chunk.css",
-    "static/js/2.1e52ae7e.chunk.js",
+    "static/js/2.9a00e9ad.chunk.js",
     "static/css/main.7b6b1f31.chunk.css",
-    "static/js/main.8a158bc3.chunk.js"
+    "static/js/main.db9ff477.chunk.js"
   ]
 }
