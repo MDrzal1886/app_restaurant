@@ -1,4 +1,5 @@
 import { Route, Switch, HashRouter } from "react-router-dom";
+import smoothscroll from "smoothscroll-polyfill";
 
 import Header from "./layouts/Header";
 import HomePage from "./pages/HomePage";
@@ -11,6 +12,7 @@ import ScrollToTopButton from "./layouts/ScrollToTopButton";
 import ErrorPage from "./pages/ErrorPage";
 
 function App() {
+  smoothscroll.polyfill();
   return (
     <HashRouter basename={process.env.PUBLIC_URL}>
       <div className="container-fluid p-0 position-relative appContainer">
