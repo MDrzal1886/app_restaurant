@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import Carousel from "bootstrap/js/src/carousel";
 import GoToMenuButton from "./GoToMenuButton";
 import burgerImg from "../img/burger.jpg";
 import pastaImg from "../img/pasta.jpg";
@@ -6,16 +8,26 @@ import pizzaImg from "../img/pizza.jpg";
 import "../sass/slider.scss";
 
 const Slider = () => {
+  useEffect(() => {
+    const myCarousel = document.querySelector("#homePageSlider");
+    const carousel = new Carousel(myCarousel, {
+      interval: 5000,
+      wrap: true,
+    });
+    carousel.cycle();
+  }, []);
+
   return (
     <div
-      id="carouselExampleCaptions"
+      id="homePageSlider"
       className="carousel slide"
       data-bs-ride="carousel"
+      data-bs-interval="false"
     >
       <div className="carousel-indicators">
         <button
           type="button"
-          data-bs-target="#carouselExampleCaptions"
+          data-bs-target="#homePageSlider"
           data-bs-slide-to="0"
           className="active"
           aria-current="true"
@@ -23,13 +35,13 @@ const Slider = () => {
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselExampleCaptions"
+          data-bs-target="#homePageSlider"
           data-bs-slide-to="1"
           aria-label="Slide 2"
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselExampleCaptions"
+          data-bs-target="#homePageSlider"
           data-bs-slide-to="2"
           aria-label="Slide 3"
         ></button>
@@ -86,7 +98,7 @@ const Slider = () => {
       <button
         className="carousel-control-prev"
         type="button"
-        data-bs-target="#carouselExampleCaptions"
+        data-bs-target="#homePageSlider"
         data-bs-slide="prev"
       >
         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -95,7 +107,7 @@ const Slider = () => {
       <button
         className="carousel-control-next"
         type="button"
-        data-bs-target="#carouselExampleCaptions"
+        data-bs-target="#homePageSlider"
         data-bs-slide="next"
       >
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
