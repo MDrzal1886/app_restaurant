@@ -25,7 +25,7 @@ const ScrollToTopButton = () => {
   return (
     <button
       onClick={handleClick}
-      className={`scrollToTopButton ${toggleScrollActiveClass} d-lg-none m-0 p-0 fs-1 border-0 position-fixed`}
+      className={`scrollToTopButton ${toggleScrollActiveClass} m-0 p-0 fs-1 border-0 position-fixed`}
       disabled={isDisabled}
     >
       <i className="fas fa-sort-up"></i>

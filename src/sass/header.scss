@@ -7,18 +7,34 @@
     z-index: 10;
   }
   .logo {
-    width: 50%;
-    @media (min-width: 992px) {
+    width: 40%;
+    margin: 0 auto;
+    @media (orientation: landscape) {
       width: 25%;
+    }
+    @media (min-width: 576px) {
+      margin: 0 0 0 3%;
+    }
+  }
+  .navbar-nav {
+    justify-content: space-around;
+    @media (min-width: 992px) {
+      width: 600px;
+    }
+    .nav-item {
+      margin: 5px 0;
+      .nav-link {
+        padding: 0 10px;
+      }
+      .nav-link:hover {
+        box-shadow: 0px 2px 0px 0px rgb(221, 213, 213);
+      }
+      .active {
+        box-shadow: 0px 2px 0px 0px rgb(221, 213, 213);
+      }
     }
   }
   .navbar-toggler {
     background-color: #373535;
-  }
-  .nav-link:hover {
-    box-shadow: 0px 2px 0px 0px rgb(221, 213, 213);
-  }
-  .active {
-    box-shadow: 0px 2px 0px 0px rgb(221, 213, 213);
   }
 }

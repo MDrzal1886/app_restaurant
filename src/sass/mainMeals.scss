@@ -3,7 +3,7 @@
     @media (min-width: 576px) {
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-between;
     }
     .list-group-item {
       width: 300px;
@@ -13,6 +13,9 @@
       }
       @media (min-width: 1400px) {
         width: 32%;
+        &:nth-last-of-type(1) {
+          margin: 0 auto 0 2%;
+        }
       }
       .mainMealImg {
         width: 70px;

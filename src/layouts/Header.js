@@ -31,11 +31,7 @@ const Header = () => {
             className="navbar-brand m-0"
             to="/"
           >
-            <img
-              className="logo d-block mx-auto"
-              src={logo}
-              alt="restaurant logo"
-            />
+            <img className="logo d-block" src={logo} alt="restaurant logo" />
           </Link>
           <button
             className="navbar-toggler rounded-0"
