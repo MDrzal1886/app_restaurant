@@ -29,7 +29,9 @@ const ContactForm = () => {
     return "is-valid";
   };
   const mailValidation = () => {
-    if (mail === "" || !mail.includes("@") || mail.length < 5) {
+    const regex =
+      /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
+    if (mail === "" || regex.test(mail) === false) {
       return "is-invalid";
     } else if (!mailValid) {
       setMailValid(true);
@@ -39,7 +41,7 @@ const ContactForm = () => {
   };
 
   const phoneNumberValidation = () => {
-    if (phoneNumber === "" || phoneNumber.length < 5) {
+    if (phoneNumber === "" || phoneNumber.length < 6) {
       return "is-invalid";
     } else if (!phoneNumberValid) {
       setPhoneNumberValid(true);
@@ -74,7 +76,7 @@ const ContactForm = () => {
       noValidate
     >
       <div className="col-md-4 inputContainer mx-auto">
-        <div className="input-group has-validation">
+        <div className="input-group has-validation inputAndValidationContainer">
           <input
             onChange={(event) => setName(event.target.value)}
             type="text"
@@ -84,11 +86,11 @@ const ContactForm = () => {
             }`}
             value={name}
           />
-          <div className="invalid-feedback">Imię jest wymagane</div>
+          <div className="invalid-feedback m-0">Imię jest wymagane</div>
         </div>
       </div>
       <div className="col-md-4 inputContainer mx-auto">
-        <div className="input-group has-validation">
+        <div className="input-group has-validation inputAndValidationContainer">
           <input
             onChange={(event) => setMail(event.target.value)}
             type="email"
@@ -98,11 +100,11 @@ const ContactForm = () => {
             }`}
             value={mail}
           />
-          <div className="invalid-feedback">Mail jest wymagany</div>
+          <div className="invalid-feedback m-0">Mail jest wymagany</div>
         </div>
       </div>
       <div className="col-md-4 inputContainer mx-auto">
-        <div className="input-group has-validation">
+        <div className="input-group has-validation inputAndValidationContainer">
           <input
             onChange={handlePhoneNumberChange}
             type="text"
@@ -113,7 +115,9 @@ const ContactForm = () => {
             aria-describedby="inputGroupPrepend"
             value={phoneNumber}
           />
-          <div className="invalid-feedback">Numer telefonu jest wymagany</div>
+          <div className="invalid-feedback m-0">
+            Numer telefonu jest wymagany
+          </div>
         </div>
       </div>
       <div className="col-md-3 inputContainer mx-auto">
@@ -125,17 +129,20 @@ const ContactForm = () => {
           value={message}
         />
       </div>
-      {sendMessage ? (
-        <p className="text-success">Wiadomość została wysłana. Dziękujemy :)</p>
-      ) : null}
       <div className="col-12 text-center">
-        <button
-          className="btn btn-dark py-2 px-4 rounded-0"
-          type="submit"
-          onClick={handleOnClick}
-        >
-          Wyślij wiadomość
-        </button>
+        {sendMessage ? (
+          <p className="text-success sendSuccesMessage">
+            Wiadomość została wysłana. Dziękujemy :)
+          </p>
+        ) : (
+          <button
+            className="btn btn-dark py-2 px-4 rounded-0"
+            type="submit"
+            onClick={handleOnClick}
+          >
+            Wyślij wiadomość
+          </button>
+        )}
       </div>
       <Prompt
         when={
