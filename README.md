@@ -9,7 +9,7 @@ I use only functions components with React Hooks like:
 - useState
 - useEffect
 
-I also using React render with:
+I also using React router with:
 
 - useLocation
 - useHistory
