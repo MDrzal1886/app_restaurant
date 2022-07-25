@@ -1,5 +1,7 @@
 # restaurant_App
 
+## link to GitHub Pages: https://mdrzal1886.github.io/app_restaurant/#/app_restaurant/
+
 This app is restaurant site example.
 
 ## This app is build by create-react-app
